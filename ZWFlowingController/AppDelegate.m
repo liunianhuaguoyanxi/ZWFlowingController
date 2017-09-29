@@ -23,7 +23,6 @@
     DomeViewController *vc = [[DomeViewController alloc]   init];
     UINavigationController *nav=[[UINavigationController alloc]initWithRootViewController:vc];
     
-    
     self.window.rootViewController = nav;
     [self.window makeKeyAndVisible];
     return YES;

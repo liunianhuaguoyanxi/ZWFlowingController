@@ -14,7 +14,9 @@ typedef void (^ZWBaseollectionSectionLoad)();
 @property (nonatomic) NSIndexPath *sectionId;
 
 @property (nonatomic, assign) int zw_columns;
+//head间距
 @property (nonatomic, assign) int zw_gap;
+//边间距
 @property (nonatomic, assign) int zw_sidegap;
 
 @property (nonatomic, strong) NSMutableArray<ZWBaseCollectionData*>* baseCells;

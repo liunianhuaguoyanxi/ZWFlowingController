@@ -11,12 +11,22 @@
 #import "ZWBaseCollectionSection.h"
 #import "ZWBaseFlowLayout.h"
 
-#import "FWTimelineCollectionCell.h"
-#import "FWTimelineCollectionData.h"
+
+
+
+#import "FWSearchCollectionData.h"
+#import "FWSearchCollectionCell.h"
+
 #import "FWButtonCollectionData.h"
 #import "FWButtonCollectionCell.h"
+
+
 #import "FWAppCollectionData.h"
 #import "FWAppCollectionCell.h"
+
+#import "FWTimelineCollectionCell.h"
+#import "FWTimelineCollectionData.h"
+
 #import "FWPortsInfoCollectionData.h"
 #import "FWPortsInfoCollectionCell.h"
 @interface DomeViewController ()
@@ -29,6 +39,8 @@
 //对应自定义Cell继承于ZWBaseCollectionCell
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.title=@"Flowing UI";
+    [UINavigationBar appearance].barTintColor = [UIColor colorWithRed:62/255.0 green:173/255.0 blue:176/255.0 alpha:1.0];
     self.view.backgroundColor=[UIColor whiteColor];
     self.zw_collectionView.backgroundColor=[UIColor lightGrayColor];
     self.zw_collectionView.frame=CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height);
@@ -46,13 +58,18 @@
 -(void) registerClassWithCostomCell
 {
     //注册你自定义的cell,唯一标示要与对应cell的data中identifier一致
+    [self.zw_collectionView registerClass:[FWSearchCollectionCell class] forCellWithReuseIdentifier:@"FWSearchCollectionCell"];
+    
     [self.zw_collectionView registerClass:[FWButtonCollectionCell class] forCellWithReuseIdentifier:@"FWButtonCollectionCell"];
     [self.zw_collectionView registerClass:[FWAppCollectionCell class] forCellWithReuseIdentifier:@"FWAppCollectionCell"];
     [self.zw_collectionView registerClass:[FWTimelineCollectionCell class] forCellWithReuseIdentifier:@"FWTimelineCollectionCell"];
     [self.zw_collectionView registerClass:[FWPortsInfoCollectionCell class] forCellWithReuseIdentifier:@"FWPortsInfoCollectionCell"];
+
 }
 -(void) load {
     //加载cell
+    [self buildSearchCollectionCell ];
+    
     [self buildFWButtonCollectionCell];
 
     
@@ -76,6 +93,25 @@
     
 //      [self.zw_collectionView scrollToItemAtIndexPath:[NSIndexPath indexPathForRow:0 inSection:2]  atScrollPosition:UICollectionViewScrollPositionTop animated:YES];
 
+}
+-(void)buildSearchCollectionCell
+{
+    //1.初始化ZWBaseCollectionSection数据
+    ZWBaseCollectionSection *section=[[ZWBaseCollectionSection alloc]initWithColumn:1 callback:^{
+        
+    }];
+    //2.初始化ZWBaseCollectionSection数据
+    FWSearchCollectionData *search=[[FWSearchCollectionData alloc]init];
+    
+    search.editCallback=^(ZWBaseCollectionData *cell,NSString *searchStr){
+        NSLog(@"show search text %@",searchStr);
+
+    };
+    
+     ///2.将cell和celldata数据装入section中备用
+    [section addViewFWCell:search];
+    //3.将section装入collectionView中，加载完毕 等待刷新
+    [self addSection:section];
 }
 -(void)buildFWButtonCollectionCell
 {
@@ -114,7 +150,8 @@
         
         
     }];
-    ///2.1.将cell数据装入section中备用
+    section0.zw_gap=3;
+    ///2.1.将cell和celldata数据装入section中备用
     [section0 addViewFWCell:devices];
     [section0 addViewFWCell:alarms];
     [section0 addViewFWCell:blockedSites];
@@ -168,6 +205,8 @@
     ZWBaseCollectionSection *section2=[[ZWBaseCollectionSection alloc]initWithColumn:1 callback:^{
         
     }];
+    
+    section2.zw_gap=5;
     FWTimelineCollectionData *firstPM=[[FWTimelineCollectionData alloc]init];
     
     firstPM.timeString=@"1:23PM";

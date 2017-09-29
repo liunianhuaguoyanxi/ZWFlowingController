@@ -28,19 +28,19 @@
 //设置Cell的高度
 -(int) zw_height {
     
-    return fDeviceWidth/3-24/3;
+    return fDeviceWidth/3-12/3;
 }
 //设置Cell的宽度
 -(int) zw_width {
-    return fDeviceWidth/3-24/3;
+    return fDeviceWidth/3-12/3;
 }
 //设置Y间隙
 -(int) zw_Ygap {
-    return 6;
+    return 3;
 }
 //设置X间隙
 -(int) zw_Xgap {
-    return 6;
+    return 3;
 }
 /*
  // Only override drawRect: if you perform custom drawing.

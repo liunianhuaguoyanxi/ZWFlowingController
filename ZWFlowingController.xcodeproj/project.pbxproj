@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8F26AD4A1F7E1197002310BF /* FWSearchCollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F26AD491F7E1197002310BF /* FWSearchCollectionCell.m */; };
+		8F26AD4D1F7E11B6002310BF /* FWSearchCollectionData.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F26AD4C1F7E11B6002310BF /* FWSearchCollectionData.m */; };
 		8F41295B1F7CED8F00DE2AC0 /* DomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F4129301F7CED8F00DE2AC0 /* DomeViewController.m */; };
 		8F41295C1F7CED8F00DE2AC0 /* skype.png in Resources */ = {isa = PBXBuildFile; fileRef = 8F4129351F7CED8F00DE2AC0 /* skype.png */; };
 		8F41295D1F7CED8F00DE2AC0 /* skype@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8F4129361F7CED8F00DE2AC0 /* skype@2x.png */; };
@@ -64,6 +66,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8F26AD481F7E1197002310BF /* FWSearchCollectionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FWSearchCollectionCell.h; sourceTree = "<group>"; };
+		8F26AD491F7E1197002310BF /* FWSearchCollectionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FWSearchCollectionCell.m; sourceTree = "<group>"; };
+		8F26AD4B1F7E11B6002310BF /* FWSearchCollectionData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FWSearchCollectionData.h; sourceTree = "<group>"; };
+		8F26AD4C1F7E11B6002310BF /* FWSearchCollectionData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FWSearchCollectionData.m; sourceTree = "<group>"; };
 		8F41292F1F7CED8F00DE2AC0 /* DomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DomeViewController.h; sourceTree = "<group>"; };
 		8F4129301F7CED8F00DE2AC0 /* DomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DomeViewController.m; sourceTree = "<group>"; };
 		8F4129351F7CED8F00DE2AC0 /* skype.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = skype.png; sourceTree = "<group>"; };
@@ -239,6 +245,8 @@
 		8F4129491F7CED8F00DE2AC0 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				8F26AD4B1F7E11B6002310BF /* FWSearchCollectionData.h */,
+				8F26AD4C1F7E11B6002310BF /* FWSearchCollectionData.m */,
 				8F41294A1F7CED8F00DE2AC0 /* FWAppCollectionData.h */,
 				8F41294B1F7CED8F00DE2AC0 /* FWAppCollectionData.m */,
 				8F41294C1F7CED8F00DE2AC0 /* FWButtonCollectionData.h */,
@@ -254,6 +262,8 @@
 		8F4129521F7CED8F00DE2AC0 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				8F26AD481F7E1197002310BF /* FWSearchCollectionCell.h */,
+				8F26AD491F7E1197002310BF /* FWSearchCollectionCell.m */,
 				8F4129531F7CED8F00DE2AC0 /* FWAppCollectionCell.h */,
 				8F4129541F7CED8F00DE2AC0 /* FWAppCollectionCell.m */,
 				8F4129551F7CED8F00DE2AC0 /* FWButtonCollectionCell.h */,
@@ -524,6 +534,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8F41296F1F7CED8F00DE2AC0 /* FWButtonCollectionData.m in Sources */,
+				8F26AD4A1F7E1197002310BF /* FWSearchCollectionCell.m in Sources */,
 				8FEAA7431F7CD9F300865029 /* ZWBaseFlowController.m in Sources */,
 				8F4129721F7CED8F00DE2AC0 /* FWAppCollectionCell.m in Sources */,
 				8FEAA6911F7CA73200865029 /* ZWBaseCollectionCell.m in Sources */,
@@ -536,6 +547,7 @@
 				8FEAA68E1F7CA52600865029 /* ZWBaseCollectionData.m in Sources */,
 				8F4129701F7CED8F00DE2AC0 /* FWPortsInfoCollectionData.m in Sources */,
 				8FEAA6971F7CABB400865029 /* ZWBaseCollectionSection.m in Sources */,
+				8F26AD4D1F7E11B6002310BF /* FWSearchCollectionData.m in Sources */,
 				8F4129741F7CED8F00DE2AC0 /* FWPortsInfoCollectionCell.m in Sources */,
 				8F4129731F7CED8F00DE2AC0 /* FWButtonCollectionCell.m in Sources */,
 				8FEAA6A01F7CBF1A00865029 /* ZWBaseFlowLayout.m in Sources */,
