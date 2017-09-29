@@ -8,5 +8,8 @@
 ##### 希望多注册点各种各样的UI模块放入应用，产品汪需要改变就快速改变，最好能通过服务器设置，模块化UI,更加灵活。
 ##### 更好利用重用机制，全局为CollocationView.整个界面的各个view（如搜索栏+轮播图+9宫格+广告等），根据板块的不同分类放入各个CollectionCell中注册放入缓存池中，需要则去寻找调用。
 #### Make the different UI  register into each CollectionCells by the classification of different function，easily to use each UI and  deal with data source  in one interface.
+### 流水UI布局实例
+### Show some Flowing UI
+  ![image](https://github.com/liunianhuaguoyanxi/ZWFlowingController/blob/master/Gif/FlowUI.gif)
 ### 详情都在demo中，希望能给大家带来帮助。
 ### All in the demo,wish it can help you!
