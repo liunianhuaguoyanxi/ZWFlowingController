@@ -1,5 +1,5 @@
 # ZWFlowingController
-## 流水UI布局，抽离collectView，随性所欲定制UI流和事件流(Easily Flowing UI, deal with data source and UI flow conveniently)
+## 流水UI布局，简单的板块化随性所欲定制UI流和事件流(Easily Flowing UI, deal with data source and UI flow conveniently)
 ### 创作灵感（Creative inspiration）
 #### 1.很多APP的首页都是固定的UI（如搜索栏+轮播图+9宫格+广告等）且内容众多需要支持上下滑动
 #### 2.产品汪一言不合就经常变更需求（根据监控用户使用率和偏好，需要变化这些固定UI的位置或者图片内容）
