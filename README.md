@@ -11,5 +11,5 @@
 ### 流水UI布局实例
 ### Show some Flowing UI
   ![image](https://github.com/liunianhuaguoyanxi/ZWFlowingController/blob/master/Gif/FlowUI.gif)
-### 详情都在demo中，希望能给大家带来帮助。
+### 详情都在demo中，如果能给大家带来帮助，记得star🙂。
 ### All in the demo,wish it can help you!
